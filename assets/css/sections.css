@@ -1,0 +1,45 @@
+@charset "UTF-8";
+.section1 {
+  margin-top: 50px;
+  margin-left: 80px;
+}
+
+.section1__title {
+  margin-top: 50px;
+  color: #130a63;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+}
+
+.section1__subtitle {
+  color: #5881c2;
+  font-family: "Rubik", sans-serif;
+}
+
+.section1__p {
+  font-family: "Rubik", sans-serif;
+  font-size: 15px;
+}
+
+.skills__section--title {
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  color: #130a63;
+  margin-bottom: 50px;
+  margin-top: 90px;
+}
+
+@media (min-width: 992px) {
+  .skills .container .row .col-md-3 {
+    flex: 0 0 12.5%; /* Esto asegura que cada columna ocupe exactamente el 12.5% del ancho del contenedor */
+    max-width: 12.5%;
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .skills .container .row .col-md-3 {
+    flex: 0 0 50%; /* Esto hace que cada columna ocupe el 50% del ancho del contenedor en dispositivos pequeños */
+    max-width: 50%;
+    text-align: center;
+  }
+}/*# sourceMappingURL=sections.css.map */

@@ -1,0 +1,67 @@
+.projects {
+    text-align: center;
+    color: #130a63;
+    padding: 60px;
+    
+}
+
+.projects__title {
+    font-family: 'Rubik', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+
+.project-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.project-item img {
+    width: 100%; /* Esto hará que la imagen ocupe el 100% del ancho de su contenedor */
+    height: auto; /* Esto mantendrá la proporción de la imagen */
+    display: block; /* Esto asegura que la imagen se muestre como un bloque */
+}
+.project-item {
+    position: relative; /* Establece la posición relativa para que los elementos absolutos se posicionen relativamente a este */
+}
+
+.project-title {
+    position: absolute; /* Establece la posición absoluta para el nombre */
+    left: -10px;
+    bottom: -48px;
+    color: #000000; /* Color del texto */
+    padding: 5px 10px; /* Añade un poco de espacio alrededor del texto */
+}
+
+@media (min-width: 768px) { /* Pantallas grandes */
+    .project-item {
+        width: auto; /* Reiniciar el ancho a automático para que las imágenes estén una al lado de la otra */
+        float: none; /* Reiniciar el float */
+        clear: none; /* Reiniciar el clear */
+        display: inline-block; /* Mostrar los elementos en línea para que estén uno al lado del otro */
+        vertical-align: bottom; /* Alinear los elementos verticalmente a la parte inferior */
+        margin-right: 10px; /* Agregar un poco de espacio entre las imágenes */
+    }
+}
+@media (max-width: 767px) { /* Pantallas pequeñas */
+    .row {
+        display: flex; /* Utilizar flexbox para la distribución de elementos */
+        flex-wrap: wrap; /* Permitir que los elementos se envuelvan en múltiples líneas */
+        justify-content: space-between; /* Distribuir los elementos uniformemente */
+    }
+
+    .col-md-3 {
+        flex: 0 0 48%; /* Establecer el ancho de cada columna al 48% para dejar espacio entre ellas */
+        margin-bottom: 45px; /* Agregar un poco de espacio entre las columnas */
+    }
+}
+
+
+
+
+
+
+
+
+
+
